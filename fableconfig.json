@@ -1,5 +1,6 @@
 {
   "sourceMaps": true,
+  "includeJs": true,
   "targets": {
     "umd": {
       "projFile": "./src/Main.fsproj",
