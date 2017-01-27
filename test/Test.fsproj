@@ -11,7 +11,7 @@
 
   <!--
    !  These are Fable libraries that you are using in your project.
-   !  They must start with ./ so Fable knows that they're relative paths.
+   !  They must start with ./ or ../ so Fable knows that they're relative paths.
    !-->
   <ItemGroup>
     <Reference Include="../node_modules/fable-core/Fable.Core.dll" />

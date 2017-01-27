@@ -74,7 +74,7 @@ the correct version of [Fable](http://fable.io/).
 Now that the project is successfully downloaded and installed, you need to
 customize it so that it becomes **your** project:
 
-* You will need to change the `ProjectGuid` in the `Main.fsproj` and
+* You will need to change the `ProjectGuid` in the `src/Main.fsproj` and
   `test/Test.fsproj` files.
 
   You cannot use the existing GUIDs. You can create a new GUID by using
@@ -179,13 +179,13 @@ You can use any [ECMAScript 2015 features](https://github.com/lukehoban/es6featu
 which are [supported by Babel](http://babeljs.io/docs/learn-es2015/).
 
 If you want to add more `.fs` files, you will need to edit the
-`Main.fsproj` file.
+`src/Main.fsproj` file.
 
 As an example, if you want to add in a new `src/fs/Foo.fs` file, you will need
-to add the following code to `Main.fsproj`:
+to add the following code to `src/Main.fsproj`:
 
 ```
-<Compile Include="src/fs/Foo.fs" />
+<Compile Include="fs/Foo.fs" />
 ```
 
 This should be placed in the same `ItemGroup` as the other `.fs` files.
@@ -239,7 +239,7 @@ module Message =
   in `src/fs`, but it is more convenient if they are the same.
 
 If you want to add more unit tests, you will need to edit the
-`test/Test.fsproj` file. It follows the same rules as `Main.fsproj` (see
+`test/Test.fsproj` file. It follows the same rules as `src/Main.fsproj` (see
 "How to make changes to your project")
 
 How to download Fable libraries
@@ -313,13 +313,13 @@ How to use Fable libraries
 ==========================
 
 Most Fable libraries contain a `.dll` file. You will need to edit your
-`Main.fsproj` file to include the library's `.dll` file.
+`src/Main.fsproj` file to include the library's `.dll` file.
 
 As an example, if you want to use the `fable-powerpack` library, you will need
-to add the following code to `Main.fsproj`:
+to add the following code to `src/Main.fsproj`:
 
 ```
-<Reference Include="./node_modules/fable-powerpack/Fable.PowerPack.dll" />
+<Reference Include="../node_modules/fable-powerpack/Fable.PowerPack.dll" />
 ```
 
 This should be placed in the same `ItemGroup` as the other `.dll` files.
@@ -329,15 +329,15 @@ Now you can use the `fable-powerpack` library in your `.fs` files.
 How to import JavaScript code into F#
 =====================================
 
-First, make sure that you have the following code in your `Main.fsproj`
+First, make sure that you have the following code in your `src/Main.fsproj`
 file:
 
 ```
-<Reference Include="./node_modules/fable-core/Fable.Core.dll" />
+<Reference Include="../node_modules/fable-core/Fable.Core.dll" />
 ```
 
 Don't worry: this repository already includes the above code in
-`Main.fsproj`
+`src/Main.fsproj`
 
 Now you can import `.js` code into F# by using
 `Fable.Core.JsInterop.importMember`:

@@ -11,11 +11,11 @@
 
   <!--
    !  These are Fable libraries that you are using in your project.
-   !  They must start with ./ so Fable knows that they're relative paths.
+   !  They must start with ./ or ../ so Fable knows that they're relative paths.
    !-->
   <ItemGroup>
-    <Reference Include="./node_modules/fable-core/Fable.Core.dll" />
-    <Reference Include="./node_modules/fable-powerpack/Fable.PowerPack.dll" />
+    <Reference Include="../node_modules/fable-core/Fable.Core.dll" />
+    <Reference Include="../node_modules/fable-powerpack/Fable.PowerPack.dll" />
   </ItemGroup>
 
   <!--
@@ -23,8 +23,8 @@
    !  File order is important in F#. Files cannot depend on anything below them.
    !-->
   <ItemGroup>
-    <Compile Include="src/fs/Message.fs" />
-    <Compile Include="src/fs/Main.fs" />
+    <Compile Include="fs/Message.fs" />
+    <Compile Include="fs/Main.fs" />
   </ItemGroup>
 
   <!-- DO NOT EDIT BELOW THIS POINT UNLESS YOU KNOW WHAT YOU'RE DOING -->
