@@ -1,6 +1,7 @@
 {
   "sourceMaps": true,
   "includeJs": true,
+  "babelPlugins": ["transform-runtime"],
   "targets": {
     "umd": {
       "projFile": "./src/Main.fsproj",

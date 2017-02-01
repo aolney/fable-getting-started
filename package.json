@@ -5,6 +5,7 @@
   "repository": "github:fable-compiler/fable-getting-started",
   "main": "./dist/umd/Main.js",
   "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.22.0",
     "fable-compiler": "^0.7.7",
     "fable-core": "^0.7.6",
     "fable-plugins-nunit": "^0.7.1",
@@ -12,7 +13,7 @@
     "mocha": "^3.1.2"
   },
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublish": "yarn run build",
     "build": "fable --target umd",
     "watch": "fable --target umd --watch",
     "test": "fable --target test"
