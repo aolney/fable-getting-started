@@ -1,6 +1,7 @@
 {
   "sourceMaps": true,
   "includeJs": true,
+  "babelrc": true,
   "targets": {
     "umd": {
       "projFile": "./src/Main.fsproj",
@@ -15,7 +16,6 @@
         "./test/Test.fsproj"
       ],
       "outDir": "./dist/test",
-      "module": "commonjs",
       "coreLib": "fable-core/umd",
       "plugins": ["./node_modules/fable-plugins-nunit/Fable.Plugins.NUnit.dll"],
       "scripts": {
