@@ -74,15 +74,6 @@ the correct version of [Fable](http://fable.io/).
 Now that the project is successfully downloaded and installed, you need to
 customize it so that it becomes **your** project:
 
-* You will need to change the `ProjectGuid` in the `src/Main.fsproj` and
-  `test/Test.fsproj` files.
-
-  You cannot use the existing GUIDs. You can create a new GUID by using
-  [this site](https://guidgenerator.com/).
-
-  Every `.fsproj` file must have a different GUID. The GUID must be upper-case,
-  and it must be wrapped in `{}`
-
 * You will need to change these properties in the
   [`package.json`](https://yarnpkg.com/en/docs/package-json) file:
 
