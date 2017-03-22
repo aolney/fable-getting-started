@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from __future__ import print_function
 
 from subprocess import check_call, check_output
 import json
@@ -17,5 +18,7 @@ with open('package.json', 'w') as f:
 
 shutil.move('GettingStarted.sln', package['name'] + '.sln')
 
-print 'Done! The project is now built. Use "yarn watch" to live compile as you save.'
-print 'You can open dist/index.html in your browser to run your code'
+print('Done! The project is now built.')
+print('You can open dist/index.html in your browser to run your code.')
+print('You can use "yarn" to recompile.')
+print('You can use "yarn watch" to automatically recompile when you save.')

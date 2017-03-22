@@ -14,7 +14,8 @@
    !  They must start with ./ or ../ so Fable knows that they're relative paths.
    !-->
   <ItemGroup>
-    <Reference Include="../node_modules/fable-core/Fable.Core.dll" />
+    <Reference Include="Fable.Core">
+        <HintPath>..\node_modules\fable-core\Fable.Core.dll</HintPath>
     <ProjectReference Include="../src/Main.fsproj" />
   </ItemGroup>
 
