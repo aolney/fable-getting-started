@@ -1,5 +1,5 @@
-Fable Quick Start
-=================
+Fable Getting Started
+=====================
 
 It can be difficult to figure out how to properly setup [Fable](http://fable.io/).
 
@@ -141,21 +141,21 @@ versions of your project's dependencies.
 How to run your project as an application
 =========================================
 
-After compiling, the final JavaScript code will be in the `dist/umd/Main.js`
+After compiling, the final JavaScript code will be in the `public/bundle.js`
 file.
 
-* If you want to run it in a browser, you can open the `dist/index.html` file
+* If you want to run it in a browser, you can open the `public/index.html` file
   in any browser. You will need to open your browser's web console in order to
   see the output.
 
-  It uses a standard HTML `<script>` tag to load the `dist/umd/Main.js` file:
+  It uses a standard HTML `<script>` tag to load the `public/bundle.js` file:
 
   ```
-  <script src="umd/Main.js"></script>
+  <script src="bundle.js"></script>
   ```
 
 * If you want to run it in [Node.js](https://nodejs.org/), you can use
-  `node .` or `node dist/umd/Main.js` (they both do the same thing)
+  `node .` or `node public/bundle.js` (they both do the same thing)
 
 How to make changes to your project
 ===================================

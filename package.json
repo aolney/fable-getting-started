@@ -1,22 +1,22 @@
 {
-  "name": "fable-quick-start",
+  "name": "fable-getting-started",
   "description": "Fully working Fable project which makes it easy to get started",
   "version": "1.0.0",
   "repository": "github:fable-compiler/fable-getting-started",
-  "main": "./dist/umd/Main.js",
+  "main": "./public/bundle.js",
   "devDependencies": {
-    "babel-polyfill": "^6.22.0",
-    "babel-preset-env": "^1.1.8",
-    "fable-compiler": "^0.7.7",
-    "fable-core": "^0.7.6",
-    "fable-plugins-nunit": "^0.7.1",
-    "fable-powerpack": "^0.0.19",
-    "mocha": "^3.1.2"
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.3.2",
+    "fable-loader": "^1.0.0-narumi-908",
+    "fable-core": "^1.0.0-narumi-906",
+    "fable-powerpack": "^1.0.0-narumi-3",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2"
   },
   "scripts": {
-    "prepublish": "yarn run build",
-    "build": "env BABEL_ENV=build fable --target umd",
-    "watch": "env BABEL_ENV=build fable --target umd --watch",
-    "test": "env BABEL_ENV=test fable --target test"
+    "build": "dotnet fable webpack",
+    "watch": "dotnet fable webpack-dev-server"
   }
 }

@@ -1,7 +1,9 @@
-/dist/test/
-/dist/umd/
 /node_modules/
+/obj/
+
+/public/bundle.js
+/public/bundle.js.map
 
 /npm-debug.log
 /yarn-error.log
-.DS_Store
+/.DS_Store
