@@ -14,8 +14,12 @@
    !  They must start with ./ or ../ so Fable knows that they're relative paths.
    !-->
   <ItemGroup>
-    <Reference Include="../node_modules/fable-core/Fable.Core.dll" />
-    <Reference Include="../node_modules/fable-powerpack/Fable.PowerPack.dll" />
+    <Reference Include="Fable.Core">
+      <HintPath>..\node_modules\fable-core\Fable.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Fable.PowerPack">
+      <HintPath>..\node_modules\fable-powerpack\Fable.PowerPack.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <!--
@@ -47,6 +51,9 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="js\Message.js" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Choose>
