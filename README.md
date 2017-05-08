@@ -53,6 +53,10 @@ because it has [several advantages over `npm`](https://yarnpkg.com/)
 
 ----
 
+Also make sure that you have installed the [`dotnet` SDK](https://www.microsoft.com/net/download/core).
+
+----
+
 Now you must use [`yarn install`](https://yarnpkg.com/en/docs/cli/install),
 which will download all of the necessary dependencies for the project.
 

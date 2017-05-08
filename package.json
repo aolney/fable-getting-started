@@ -9,13 +9,14 @@
     "babel-loader": "^6.4.1",
     "babel-polyfill": "^6.23.0",
     "babel-preset-env": "^1.3.2",
-    "fable-loader": "^1.0.0-narumi-908",
     "fable-core": "^1.0.0-narumi-906",
-    "fable-powerpack": "^1.0.0-narumi-3",
+    "fable-loader": "^1.0.0-narumi-908",
+    "fable-powerpack": "^1.0.0-narumi-5",
     "webpack": "^2.3.2",
     "webpack-dev-server": "^2.4.2"
   },
   "scripts": {
+    "postinstall": "dotnet restore Main.fsproj",
     "build": "dotnet fable webpack",
     "watch": "dotnet fable webpack-dev-server"
   }
